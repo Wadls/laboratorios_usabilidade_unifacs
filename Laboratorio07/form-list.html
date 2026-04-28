@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Formulário</h1>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>Formulário de Contato</legend>
+            <section id="formulário">
+                <form action="#" method="get">
+                    <div>
+                        <label for="nome">Nome:</label> <!-- A necessidade do 'for' em uma Label, para além de trazer mais acessibilidade ao código (Deficientes visuais e etc,)-->
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email:</label><!--Também ajuda na Usabilidade, pois, quando o texto da label é clicado, o navegador coloca o foco no campo correspondente-->
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="escreva sua mensagem aqui" required></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <details>
+                            <summary>Receber cópia de mensagem?</summary>
+                            <p>Uma cópia da sua mensagem será enviada separadamente para o seu email</p>
+                        </details>
+                        <input type="radio" id="sim" name="pergunta" value="sim">
+                        <label for="sim">Sim</label>
+                        <input type="radio" id="nao" name="pergunta" value="nao">
+                        <label for="nao">Não</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="motivos">Motivo do contato:</label>
+                        <select name="motivos" id="motivos" required>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamação</option>
+                        </select>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+            <section id="links">
+                <fieldset>
+                    <legend>Menus:</legend>
+                    <div class="box-list">
+                        <div class="box-element">
+                            <h2>Menu 1</h2>
+                        </div>
+                        <div class="box-element">
+                            <h2>Menu 2</h2>
+                        </div>
+                        <div class="box-element">
+                            <h2>Menu 3</h2>
+                        </div>
+                        <div class="box-element">
+                            <h2>Menu 4</h2>
+                        </div>
+                        <div class="box-element">
+                            <h2>Menu 5</h2>
+                        </div>
+                        <div class="box-element">
+                            <h2>Menu 6</h2>
+                        </div>
+                        <div class="box-element">
+                            <h2>Menu 7</h2>
+                        </div>
+                        <div class="box-element">
+                            <h2>Menu 8</h2>
+                        </div>
+                        <div class="box-element">
+                            <h2>Menu 9</h2>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+        </fieldset>
+    </main>
+
+    <footer>
+        <p>&copy; 20XX Minha Página. Todos direitos reservados.</p>
+    </footer>
+</body>
+</html>

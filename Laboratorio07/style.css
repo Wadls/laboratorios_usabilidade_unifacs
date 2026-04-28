@@ -1,0 +1,139 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header,footer{
+    flex-shrink: 0;
+    text-align: center;
+    background: #89cff0;
+    color: white;
+    padding: 20px;
+}
+
+footer p{
+    margin: 0;
+}
+
+main{
+    height: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px /*Espaçamento entre elementos*/;
+    padding: 20px;
+}
+
+section{
+    margin-top: 20px;
+}
+
+
+label{ 
+    margin-bottom: 5px;
+}
+fieldset{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type = 'text'],
+input[type = 'email'],
+textarea,
+select{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+.radio-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.radio-group input[type='radio']{
+    margin-right: 5px;
+}
+.radio-group label{
+    margin-bottom: 0px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.select-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.select-group select{
+    width: 70%;
+}
+.select-group label{
+    margin: 1px;
+}
+button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+button:hover{
+    background-color: #45a049;
+}
+form {
+    display: flex;
+    flex-direction: column; /* Esta linha resolve o problema */
+    align-items: stretch;   /* Faz com que os elementos ocupem a largura total */
+    font-weight: bold;
+}
+
+#links{
+    height: 60vh;
+    overflow: scroll;
+    flex: 0.5;
+    background: lightcyan;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.box-element{
+    text-align: center;
+    background-color: white;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+.box-list{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+#formulario{
+    height: 60vh;
+    overflow: scroll;
+    flex: 0.5;
+    background: lightcyan;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.box-grid{
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
